@@ -29,8 +29,22 @@
     animation: rotate 1.5s ease-in-out infinite;
     border-top: 15px solid lightgreen;
 }
+.spinner-text{
+    animation: opal 2s ease infinite; 
+}
 
 @keyframes rotate {
     from {transform: rotate(0);}
     to{transform: rotate(360deg);}
+}
+@keyframes opal{
+    0%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: .5;
+    }
+    50% {
+        opacity: .2;
+    }
 }
