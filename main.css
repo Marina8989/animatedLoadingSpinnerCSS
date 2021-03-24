@@ -15,5 +15,22 @@
     height: 100%;
     border-radius: 50%;
     border: 15px solid transparent;
-    border-top: 15px solid blue;
+    /* mix-blend-mode: overlay; */
+}
+.spinner-blue{
+    animation: rotate 2s ease-out infinite;
+    border-top: 15px solid lightblue;
+}
+.spinner-red{
+    animation: rotate 2.5s ease-in infinite;
+    border-top: 15px solid lightcoral;
+}
+.spinner-green {
+    animation: rotate 1.5s ease-in-out infinite;
+    border-top: 15px solid lightgreen;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0);}
+    to{transform: rotate(360deg);}
 }
